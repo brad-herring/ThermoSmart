@@ -120,16 +120,29 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Header getWeather={this.getWeather}/>
-        <Analytics
-        temperature={this.state.temperature}
-        thermostat_temp={this.state.thermostat_temp}
-        thermostat_setting={this.state.thermostat_setting}
-        city={this.state.city}
-        country={this.state.country}
-        error={this.state.error}
-        />
+      <div>
+        <div className="wrapper">
+          <div className="main">
+            <div className="container">
+              <div className="row">
+                <div className="col-xs-5 title-container">
+                  <h1>ThermoSmart</h1>
+                </div>
+                <div className="col-xs-7 form-container">
+                  <Header getWeather={this.getWeather}/>
+                  <Analytics
+                  temperature={this.state.temperature}
+                  thermostat_temp={this.state.thermostat_temp}
+                  thermostat_setting={this.state.thermostat_setting}
+                  city={this.state.city}
+                  country={this.state.country}
+                  error={this.state.error}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
