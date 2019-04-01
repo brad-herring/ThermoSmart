@@ -5,10 +5,12 @@ class Header extends Component {
     return (
       <div className="App">
       <center>
-        <h1>ThermoSmart Home Thermostat</h1>
+        <h1>Overview</h1>
+        <br />
         <form onSubmit={this.props.getWeather}>
           <button>Calculate</button>
         </form>
+        <br />
         </center>
       </div>
     );

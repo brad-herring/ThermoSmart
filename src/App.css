@@ -4,6 +4,7 @@
 
 body {
   font-family: "Open Sans", serif;
+  font-weight: bold;
 }
 
 .wrapper {
@@ -22,15 +23,21 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #000;
+  color: #F0F8FF;
+  border-style: ridge;
+  border-right: 2px;
+  border-color: gray;
 }
 
 .form-container {
   background-color: #2c3e50;
   height: 90vh;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-left: 50px;
-  color: white;
+  color: #F0F8FF;
+  border-style: solid;
+  border-left: 2px;
+  border-color: gray;
 }
 
 button {

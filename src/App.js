@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Analytics from './components/Analytics';
+import Title from './components/Title';
 
 const LOCATION_KEY = `a54097ce431e4b1241f6129bb302ebdd`;
 const WEATHER_KEY = `a3643d9ab50eedf3e1cae0983ab63d53`;
@@ -126,7 +127,7 @@ class App extends Component {
             <div className="container">
               <div className="row">
                 <div className="col-xs-5 title-container">
-                  <h1>ThermoSmart</h1>
+                  <Title />
                 </div>
                 <div className="col-xs-7 form-container">
                   <Header getWeather={this.getWeather}/>
