@@ -5,7 +5,7 @@ class Title extends Component {
   render() {
     return (
       <div className="Titlepanel">
-        <h1>ThermoSmart</h1>
+        <h1 className="Titlepanel__title">ThermoSmart</h1>
         <br />
         <p>Maximum Energy Savings and Comfort</p>
       </div>
