@@ -8,7 +8,7 @@ body {
 }
 
 .wrapper {
-  background: linear-gradient(to right, #1E90FF, #4169E1);
+  background: linear-gradient(to right, #1E90FF, 	#00BFFF);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -20,13 +20,14 @@ body {
   background: url(https://androidwalls.net/wp-content/uploads/2015/04/Blue%20Sky%20Smudge%20Clouds%20Android%20Wallpaper.jpg) center center no-repeat;
   background-size: cover;
   display: flex;
-  padding-top: 50px;
+  padding-top: 30px;
   justify-content: center;
   text-align: center;
   color: #F0F8FF;
   border-style: ridge;
   border-right: 2px;
   border-color: gold;
+  font-size: 18px;
 }
 
 .form-container {
@@ -41,7 +42,7 @@ body {
 }
 
 .Titlepanel__title {
-  font-size: 50px;
+  font-size: 60px;
   letter-spacing: 2px;
   line-height: 1.3;
   font-family: 'Roboto Slab', serif;
@@ -49,6 +50,10 @@ body {
 
 .Overview {
   font-size: 40px;
+}
+
+.Analytics {
+  font-size: 20px;
 }
 
 button {

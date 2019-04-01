@@ -6,7 +6,6 @@ class Title extends Component {
     return (
       <div className="Titlepanel">
         <h1 className="Titlepanel__title">ThermoSmart</h1>
-        <br />
         <p>Maximum Energy Savings and Comfort</p>
       </div>
     );
