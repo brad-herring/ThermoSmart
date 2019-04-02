@@ -7,10 +7,6 @@ class Header extends Component {
       <center>
         <h1 className="Overview">Overview</h1>
         <br />
-        <form onSubmit={this.props.getWeather}>
-          <button>Calculate</button>
-        </form>
-        <br />
         </center>
       </div>
     );
