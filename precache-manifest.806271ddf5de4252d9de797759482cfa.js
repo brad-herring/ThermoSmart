@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "448c34a56d699c29117adc64c43affeb",
-    "url": "/ThermoSmart/static/media/glyphicons-halflings-regular.448c34a5.woff2"
+    "revision": "f4769f9bdb7466be65088239c12046d1",
+    "url": "/ThermoSmart/static/media/glyphicons-halflings-regular.f4769f9b.eot"
   },
   {
-    "revision": "1f587fb47b56d3288e12",
+    "revision": "5064fa685044410f486f",
     "url": "/ThermoSmart/static/css/main.e8df98e3.chunk.css"
   },
   {
@@ -20,12 +20,12 @@ self.__precacheManifest = [
     "url": "/ThermoSmart/static/js/2.eaa23196.chunk.js"
   },
   {
-    "revision": "1f587fb47b56d3288e12",
-    "url": "/ThermoSmart/static/js/main.ec4a8058.chunk.js"
+    "revision": "5064fa685044410f486f",
+    "url": "/ThermoSmart/static/js/main.a6b636e5.chunk.js"
   },
   {
-    "revision": "f4769f9bdb7466be65088239c12046d1",
-    "url": "/ThermoSmart/static/media/glyphicons-halflings-regular.f4769f9b.eot"
+    "revision": "448c34a56d699c29117adc64c43affeb",
+    "url": "/ThermoSmart/static/media/glyphicons-halflings-regular.448c34a5.woff2"
   },
   {
     "revision": "fa2772327f55d8198301fdb8bcfc8158",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/ThermoSmart/static/css/2.03af7589.chunk.css"
   },
   {
-    "revision": "e37adb0f6c27644497e65e12eff1c254",
+    "revision": "3c89a4169e524609fb8b7630e642151d",
     "url": "/ThermoSmart/index.html"
   }
 ];
