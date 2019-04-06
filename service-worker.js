@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ThermoSmart/precache-manifest.f6cb01b1598b889f07e4cc79ef2c36af.js"
+  "/ThermoSmart/precache-manifest.2cfbec0fc735c48e0c48a4755d0889af.js"
 );
 
 workbox.clientsClaim();
