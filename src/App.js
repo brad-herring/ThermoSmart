@@ -97,7 +97,7 @@ class App extends Component {
     const loc_data = await api_call1.json();
     const city = loc_data.city;
     const country = loc_data.country_code;
-    const api_call2 = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${WEATHER_KEY}&units=imperial`);
+    const api_call2 = await fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${WEATHER_KEY}&units=imperial`);
     const data = await api_call2.json();
     let date = new Date();
     let hour = date.getHours();
