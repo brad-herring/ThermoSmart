@@ -4,9 +4,13 @@ import Header from './components/Header';
 import Analytics from './components/Analytics';
 import Title from './components/Title';
 
+
+//API Keys
 const LOCATION_KEY = `a54097ce431e4b1241f6129bb302ebdd`;
 const WEATHER_KEY = `a3643d9ab50eedf3e1cae0983ab63d53`;
 
+
+//Thermostat Functions
 function fahrenheit_base_temperatures(temp) {
     var base;
 
@@ -93,22 +97,25 @@ class App extends Component {
 
   getWeather = async (e) => {
     e.preventDefault();
+    //Location Data
     const api_call1 = await fetch(`http://api.ipstack.com/72.188.107.209?access_key=${LOCATION_KEY}`);
     const loc_data = await api_call1.json();
     const city = loc_data.city;
     const country = loc_data.country_code;
+
+    //Weather Data
     const api_call2 = await fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${WEATHER_KEY}&units=imperial`);
     const data = await api_call2.json();
+
+    //Time Data
     let date = new Date();
     let hour = date.getHours();
-    console.log(data);
-    console.log(hour);
+
+    //Thermostat calulations
     let pretemp_reading = fahrenheit_base_temperatures(data.main.temp);
     let temp_reading = base_adjustment(pretemp_reading, time_index(hour));
     let heatCool_reading = heat_or_cool(base_adjustment(pretemp_reading, time_index(hour)));
-    console.log(pretemp_reading);
-    console.log(temp_reading);
-    console.log(heatCool_reading);
+
     this.setState({
       temperature: data.main.temp,
       thermostat_temp: temp_reading,
